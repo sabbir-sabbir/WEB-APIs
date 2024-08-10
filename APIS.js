@@ -100,13 +100,19 @@ async function getData(){
     display.innerText = data;
 }
 
+
+
+
+
+
+// Web Geolocation API....
 const displayy = document.getElementById("displayy");
 
 function getlocation(){
       if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(showPostion, showError);
       } else {
-        displayy.inert = "Geolocation is not Available in your Syestem."
+        displayy.inerHTML = "Geolocation is not Available in your Syestem."
       }
 }
 
